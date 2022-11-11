@@ -16,6 +16,7 @@
     height: 193px;
     z-index: 1;
     color: white;
+    overflow: hidden;
 }
 
 .collect__imgBg {
@@ -44,6 +45,7 @@
     z-index: 10;
     left: 6px;
     top: 7px;
+    transform: scale(1.5);transition: 0.4s;
 }
 
 .collect_body {
@@ -53,6 +55,8 @@
     flex-direction: column;
     height: 100%;
     gap: 15px;
+    transition: 0.4s;
+    opacity: 0;
 
 }
 
@@ -85,4 +89,17 @@
         width: 95%;
         height: 90%;
     }
+}
+
+.collect__card:hover .collect__lines{
+    transform: scale(1);
+}
+
+.collect__card:hover .collect__icon{
+    transform: rotateX(360deg);
+}
+
+.collect__card:hover .collect_body{
+    opacity: 1;
+    transform: scale(1.3);
 }
