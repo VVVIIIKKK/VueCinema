@@ -65,6 +65,24 @@
     font-size: 20px;
     font-weight: 700;
     line-height: 22px;
-    
+}
 
+@media screen and (max-width:1024px) {
+    .collections__wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .collect__card {
+        width: 300px;
+        height: 143px;
+    }
+    .collect__lines{
+        width: 95%;
+        height: 90%;
+    }
 }
